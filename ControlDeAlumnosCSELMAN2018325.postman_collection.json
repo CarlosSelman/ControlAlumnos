@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "70c1c49d-97bc-4632-a37e-a2e74b642880",
+		"name": "ControlDeAlumnosCSELMAN2018325",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "obtenerToken",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "usuario",
+							"value": "MAESTRO",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerUsuarioId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerUsuarioId",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerUsuarioId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDM1YzIwM2MxYTRiNDRkYzQxZGQ4MGMiLCJ1c3VhcmlvIjoiTUFFU1RSTyIsInJvbCI6IlJPTF9NQUVTVFJPIiwiaWF0IjoxNjE0MTM1ODE1LCJleHAiOjE2MTQ4MjcwMTV9.xKQdQBFvRV7SiIVJfaMDMKqiJar5iwOZDMIF5fEAWnc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerUsuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "joseS",
+							"type": "text"
+						},
+						{
+							"key": "usuario",
+							"value": "josesS",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "josesS@kinal.edu.gt",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12456",
+							"type": "text"
+						},
+						{
+							"key": "rol",
+							"value": "ROL_MAESTRO",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registrarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registrarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ejemplo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDM0NDY4OTU4ZDk1MTFkNGMxOGM2NWYiLCJ1c3VhcmlvIjoiTUFFU1RSTyIsInJvbCI6IlJPTF9NQUVTVFJPIiwiaWF0IjoxNjE0MDM4Njc5LCJleHAiOjE2MTQ4MTYyNzl9.4khdyeXjQYD963b43AmVeR26hCqQX2UhVRZCFmKL2GA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/ejemplo",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ejemplo"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDM0NDY4OTU4ZDk1MTFkNGMxOGM2NWYiLCJ1c3VhcmlvIjoiTUFFU1RSTyIsInJvbCI6IlJPTF9NQUVTVFJPIiwiaWF0IjoxNjE0MTMyNjEwLCJleHAiOjE2MTQ4MjM4MTB9.bcAOl2TkrgDNv3X-9p0TowfM7VWF1lneTGb7HmUvLO8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "MAESTRO",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarUsuario/6034468958d9511d4c18c65f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarUsuario",
+						"6034468958d9511d4c18c65f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarUsuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDM0NDY4OTU4ZDk1MTFkNGMxOGM2NWYiLCJ1c3VhcmlvIjoiTUFFU1RSTyIsInJvbCI6IlJPTF9NQUVTVFJPIiwiaWF0IjoxNjE0MTMxMTQ1LCJleHAiOjE2MTQ4MjIzNDV9.A2-OUjg82_rXHY4wK412K5T9iaZna2Q2pc1a66u3jpI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarUsuario/602aab87bd5e4348283ff688",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarUsuario",
+						"602aab87bd5e4348283ff688"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarEncuesta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDI1M2UxOGI1ZWZiYjQxODBjM2QwYTIiLCJub21icmUiOiJqb3NlIiwidXN1YXJpbyI6Impvc2VzIiwiZW1haWwiOiJqb3Nlc0BraW5hbC5lZHUuZ3QiLCJyb2wiOiJST0xfVVNVQVJJTyIsImltYWdlbiI6bnVsbCwiaWF0IjoxNjEzNjYwMzAwLCJleHAiOjE2MTQxNzg3MDB9.WNhJ4P5yJ_o3eyvo-aZV9kxkZp0kxg_OpgdAiYkZJ-0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "titulo",
+							"value": "Opinion sobre KINAL",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "Es la promocion del 2021 la mejor?",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarEncuesta",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarEncuesta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerEncuestas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDI1M2UxOGI1ZWZiYjQxODBjM2QwYTIiLCJub21icmUiOiJqb3NlIiwidXN1YXJpbyI6Impvc2VzIiwiZW1haWwiOiJqb3Nlc0BraW5hbC5lZHUuZ3QiLCJyb2wiOiJST0xfVVNVQVJJTyIsImltYWdlbiI6bnVsbCwiaWF0IjoxNjEzNjYxNzI4LCJleHAiOjE2MTQxODAxMjh9.zKcGdGCSa6iX6BgfdDA1qQ4pSpgCZcTdWxjiKSy7PF8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerEncuestas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEncuestas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrarCurso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDM0NDY4OTU4ZDk1MTFkNGMxOGM2NWYiLCJ1c3VhcmlvIjoiTUFFU1RSTyIsInJvbCI6IlJPTF9NQUVTVFJPIiwiaWF0IjoxNjE0MTMxNTcwLCJleHAiOjE2MTQ4MjI3NzB9.MXrgcMenejdXEkrxY3Nixxs1BwwsNKnnlQIEIZQ1Yco",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Matematicas155555555555",
+							"type": "text"
+						},
+						{
+							"key": "idUsuarioProfesor",
+							"value": "6034468958d9511d4c18c65f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registrarCurso",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registrarCurso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerCursos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDM1YzIwM2MxYTRiNDRkYzQxZGQ4MGMiLCJ1c3VhcmlvIjoiTUFFU1RSTyIsInJvbCI6IlJPTF9NQUVTVFJPIiwiaWF0IjoxNjE0MTM1ODE1LCJleHAiOjE2MTQ4MjcwMTV9.xKQdQBFvRV7SiIVJfaMDMKqiJar5iwOZDMIF5fEAWnc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerCursos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerCursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerCursoId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerCursoId",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerCursoId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarCurso",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarCurso/602aab87bd5e4348283ff688",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarCurso",
+						"602aab87bd5e4348283ff688"
+					]
+				},
+				"description": "eliminarCurso"
+			},
+			"response": []
+		},
+		{
+			"name": "editarCurso",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDM0NDY4OTU4ZDk1MTFkNGMxOGM2NWYiLCJ1c3VhcmlvIjoiTUFFU1RSTyIsInJvbCI6IlJPTF9NQUVTVFJPIiwiaWF0IjoxNjE0MTMyNjEwLCJleHAiOjE2MTQ4MjM4MTB9.bcAOl2TkrgDNv3X-9p0TowfM7VWF1lneTGb7HmUvLO8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "MateEditado",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarCurso/6034468958d9511d4c18c65f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarCurso",
+						"6034468958d9511d4c18c65f"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
